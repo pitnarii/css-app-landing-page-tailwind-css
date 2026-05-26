@@ -9,19 +9,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style type="text/tailwindcss">
     @theme  {
-      /* --spacing-contact: 60px 40px; */
-     }
-  
+      --text-label: 1rem;
 
-    /* .contact-box {
-      border-radius: 20px;
-      padding: 48px 40px;
-      width: 100%;
-      max-width: 1199px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    } */
+       
+     }
 
     .contact-box h2 {
       text-align: center;
@@ -36,10 +27,10 @@
       gap: 6px;
     }
 
-    .form-group label {
+    /* .form-group label {
       font-size: 0.85rem;
       font-weight: 500;
-    }
+    } */
 
     .form-group input,
     .form-group textarea {
@@ -105,7 +96,7 @@
     <div class="bg-white w-full max-w-[1199px] flex flex-col gap-[20px] py-[48px] px-[40px]">
       <h2 class="text-[#111] text-center text-[3rem] font-bold mb-1 ">Get in Touch</h2>
       <div class="form-group">
-        <label class="text-[#333]">Name</label>
+        <label class="text-[#333] text-(--text-label)">Name</label>
         <input type="text" placeholder="John Doe" />
       </div>
       <div class="form-group">
