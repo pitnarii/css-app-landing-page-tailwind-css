@@ -1,13 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Start Coding Here -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @theme  {
+      /* --spacing-contact: 60px 40px; */
+     }
+  
+
+    /* .contact-box {
+      border-radius: 20px;
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 1199px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    } */
+
+    .contact-box h2 {
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      color: #333;
+      background-color: #fafafa;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .form-group textarea {
+      height: 110px;
+      resize: vertical;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #6c47ff;
+    }
+
+    .btn-full {
+      width: 50%;
+      padding: 14px;
+      margin-top: 4px;
+      align-self: center;
+      border-radius: 20px;
+      background-color: #111;
+      color: white;
+      font-weight: 500;
+      font-size: larger;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      font-size: 0.82rem;
+      color: #888;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #888;
+    }
+
+    .footer-links a:hover {
+      color: #6c47ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex justify-center p-[60px] bg-[#F6F6FB]">
+    <div class="bg-white w-full max-w-[1199px] flex flex-col gap-[20px] py-[48px] px-[40px]">
+      <h2 class="text-[#111] text-center text-[3rem] font-bold mb-1 ">Get in Touch</h2>
+      <div class="form-group">
+        <label class="text-[#333]">Name</label>
+        <input type="text" placeholder="John Doe" />
+      </div>
+      <div class="form-group">
+        <label class="text-[#333]">Email</label>
+        <input type="email" placeholder="john@example.com" />
+      </div>
+      <div class="form-group">
+        <label class="text-[#333]">Message</label>
+        <textarea placeholder="Your message..."></textarea>
+      </div>
+      <button class="btn-primary btn-full">Submit</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>Acme productivity app ©2024</span>
+    <nav class="footer-links">
+      <a href="#">FAQ</a>
+      <a href="#">Terms</a>
+      <a href="#">AI Policy</a>
+      <a href="#">Pricing</a>
+    </nav>
+  </footer>
+</body>
+
 </html>
