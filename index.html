@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -24,73 +23,11 @@
     </style>
   </head>
  <body class="bg-[#F6F6FB] font-Inter">
-    <header class="dev1-container">
-      <nav class="fixed top-4 inset-x-4 flex justify-between bg-white pt-[12px] pr-[80px] pb-[12px] pl-[80px] m-4 rounded-[36px] w-auto mx-auto max-w-7xl">
-        <img src="Image/logo.svg" alt="Acme logo" class="h-10 w-auto object-contain shrink-0 cursor-pointer"/>
-        <ul class="flex items-center basis-[20%] gap-[40px]">
-          <button class="hover:text-[#5E44FF] hover:underline">Home</button>
-          <button class="hover:text-[#5E44FF] hover:underline">Features</button>
-          <button class="hover:text-[#5E44FF] hover:underline">Pricing</button>
-          <button class="hover:text-[#5E44FF] hover:underline">Contact</button>
-        </ul>
-      </nav>
-    </header>
-    <main class="flex flex-col gap-[8rem] pt-[120px] pr-[120px] pb-[140px] pl-[120px]">
-      <section class="flex flex-col justify-center items-center gap-[40px]">
-        <div class="bg-[#563AFF1A] rounded-full pt-[8px] pr-[20px] pb-[8px] pl-[20px] cursor-pointer">
-          <p>🌈️ Acme Productivity App</p>
-        </div>
-        <div class="flex flex-col justify-center items-center cursor-default">
-          <h1 class="text-[5rem] font-bold">Boost Your <span class="text-[#5E44FF] font-bold">Product</span>ivity</h1>
-          <p class="text-[1.6rem] font-semibold">Streamline your workflow with our all-in-one productivity app.</p>
-        </div>
-        <button class="text-white bg-[#1A1A2C] pt-4 pr-9 pb-4 pl-9 rounded-2xl w-[187px] hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring focus:ring-[#5F5F76]">Star Free Trial</button>
-      </section>
-
-      <section class="flex justify-center items-center gap-[16px]">
-        <div class="flex flex-col gap-[40px] bg-[#D7E5F6] p-[28px] w-[387px] h-full rounded-[24px]">
-          <div class="flex justify-center items-center w-[60px] h-[60px] rounded-[16px] bg-white bg-opacity-60">
-            <img src="icons/rocket.svg" alt="rocket icon">
-          </div>
-          <div class="flex flex-col gap-[12px]">
-            <h3 class="font-[700] text-[#1A1A2C] text-[24px] leading-[1.2] whitespace-nowrap">Streamlined Workflows</h3>
-              <p class="text-[16px] text-[#5F5F76] leading-[1.5]">
-                Automate repetitive tasks and focus on high-impact work with our
-                powerful productivity features.
-              </p>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-[40px] bg-[#D7E5F6] p-[28px] w-[387px] h-full rounded-[24px]">
-          <div class="flex justify-center items-center w-[60px] h-[60px] rounded-[16px] bg-white bg-opacity-60">
-            <img src="icons/chart.svg" alt="chart icon">
-          </div>
-          <div class="flex flex-col gap-[12px]">
-            <h3 class="font-[700] text-[#1A1A2C] text-[24px] leading-[1.2] whitespace-nowrap">Blazing Fast Performance</h3>
-              <p class="text-[16px] text-[#5F5F76] leading-[1.5]">
-                Experience lightning-fast performance and instant responsiveness
-                with our cutting-edge technology.
-              </p>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-[40px] bg-[#D7E5F6] p-[28px] w-[387px] h-full rounded-[24px]">
-          <div class="flex justify-center items-center w-[60px] h-[60px] rounded-[16px] bg-white bg-opacity-60">
-            <img src="icons/smiley.svg" alt="smiley icon">
-          </div>
-          <div class="flex flex-col gap-[12px]">
-            <h3 class="font-[700] text-[#1A1A2C] text-[24px] leading-[1.2] whitespace-nowrap">Intuitive Interface</h3>
-              <p class="text-[16px] text-[#5F5F76] leading-[1.5]">
-                Our user-friendly interface makes it easy for anyone to
-                streamline their workflow.
-              </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div class="flex justify-center p-[60px] bg-[#F6F6FB]">
-    <div class="bg-white w-full max-w-[1199px] flex flex-col gap-[20px] py-[48px] px-[40px] rounded-[20px] shadow-sm">
-      <h2 class="text-[#111] text-center text-[3rem] font-bold mb-1">Get in Touch</h2>
+    <!-- Aoey -->
+     <!-- contact container -->
+    <div class="flex justify-center p-[16px] sm:p-[60px] bg-[#F6F6FB]">
+    <div class="w-full max-w-[640px] md:max-w-[960px] lg:max-w-[1199px] bg-white flex flex-col gap-[20px] py-[20px] px-[20px] md:py-[48px] md:px-[40px] rounded-[20px] shadow-sm">
+      <h2 class="text-[#111] text-center text-[2rem] sm:text-[3rem] font-bold mb-1">Get in Touch</h2>
       <div class="flex flex-col gap-[10px]">
         <label class="text-[#333] text-label">Name</label>
         <input class="border border-[#ddd] rounded-[10px] px-4 py-3 text-[0.9rem] text-[#333] bg-[#fafafa] outline-none" type="text" placeholder="John Doe" />
@@ -103,13 +40,14 @@
         <label class="text-[#333] text-label">Message</label>
         <textarea class="border border-[#ddd] rounded-[10px] px-4 py-3 text-[0.9rem] text-[#333] bg-[#fafafa] outline-none h-[110px] resize-y" placeholder="Your message..."></textarea>
       </div>
-      <button class="w-1/2 self-center rounded-[20px] bg-[#111] text-white font-medium text-base px-6 py-4 hover:bg-[#333]">Submit</button>
+      <!-- button -->
+      <button class="w-[303px] sm:w-[589px] sm:h-[56px] self-center rounded-[20px] bg-[#111] text-white font-medium text-base px-6 py-4 hover:bg-[#333]">Submit</button>
     </div>
   </div>
 
-  <footer class="flex items-center justify-between pb-[40px] pr-[240px] pl-[240px]">
-    <span>Acme productivity app ©2024</span>
-    <nav class="flex gap-[30px] font-semibold">
+  <footer class="flex flex-col items-center gap-3 pt-[40px] pb-[40px] px-[16px] sm:flex-row sm:justify-between sm:items-center sm:px-[240px]">
+    <span class="text-center">Acme productivity app ©2024</span>
+    <nav class="tracking-[0.2em] flex flex-wrap justify-center gap-[20px] font-semibold sm:justify-end">
       <a href="#">FAQ</a>
       <a href="#">Terms</a>
       <a href="#">AI Policy</a>
